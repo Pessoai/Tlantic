@@ -7,3 +7,8 @@ LOJA_ID, LOJA, CIDADE, REGIAO, PRODUTIVIDADE_HORA, TOTAL_COLABORADORES, SKUS, CA
 
 The final goal of this machine learning exercise is to create a model to predict the sales for a big supermarket company for the next 4 to 6 days. 
 
+Some pending questions:
+  - how to handle sales amounts on days when the store was closed;
+      - should we sum the sales amount to the previous day?
+      - after filling in missing values, should we delete  or set to 0 all lines for the 25/12 and 01/01?
+
