@@ -10,5 +10,8 @@ The final goal of this machine learning exercise is to create a model to predict
 Some pending questions:
   - how to handle sales amounts on days when the store was closed;
       - should we sum the sales amount to the previous day?
-      - after filling in missing values, should we delete  or set to 0 all lines for the 25/12 and 01/01?
+      - after filling in missing values, should we delete the sales amount or set it to 0?
+      - add the percentages of pricing increasing and decreasing of SKUS per store to the dashboard;
+      - analyse the sales amount of the days before the holidays;  
+      - the tree model will study the impact of the holidays, gradient boosting or extreme gradient boosting?
 
