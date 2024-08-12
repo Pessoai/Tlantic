@@ -259,27 +259,6 @@ plt.xticks(ticks=range(1, 13), labels=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
 plt.grid(True)
 plt.show()
 
-# Contar o numero de lojas por cluster
-contagem_clusters = monthly_data_by_store['cluster'].value_counts().reset_index()
-contagem_clusters.columns = ['Cluster', 'Numero de Lojas']
-
-# Exibir a tabela de frequencia
-contagem_clusters
-
-# Cluster 0
-df_cluster_0 = monthly_data_by_store[monthly_data_by_store['cluster'] == 0]
-
-tabela_frequencia = df_cluster_0['REGIAO'].value_counts().reset_index()
-tabela_frequencia.columns = ['Região', 'Número de Lojas']
-
-total_lojas = tabela_frequencia['Número de Lojas'].sum()
-
-tabela_frequencia['Porcentagem (%)'] = (tabela_frequencia['Número de Lojas'] / total_lojas) * 100
-
-tabela_frequencia = tabela_frequencia.sort_values(by='Número de Lojas', ascending=False)
-
-tabela_frequencia
-
 #monthly_data_by_store.to_excel('monthly_data_by_store.xlsx', index=False)
 
 #Verificar Cluster 1
